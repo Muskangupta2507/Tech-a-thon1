@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0 auto ;
+  margin:5% 25% ;
+  border: 1px solid black;
+}
+.container {
+  padding: 16px;
+  text-align: center;
+}
+h1,p{
+  text-align: center;
+}
+label{
+  text-align: left;
+  display: block;
+}
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+#captcha-image {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.loginbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.loginbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.register {
+  background-color: #f1f1f1;
+  text-align: center;
+}
