@@ -1,0 +1,261 @@
+*{
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: .2s linear;
+}
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  .middle2 a{
+    text-decoration: none; 
+  }
+  .middle2 a:hover{
+    color: #007bff;
+  }
+  .logo h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    color: #007bff;
+  }
+  /* .subli li{
+    display: list-item;
+    visibility: hidden;
+  } */
+  nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .dropdown li:hover > ul {
+    display: block;
+  }
+  .subli li{
+    /* display: list-item; */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+  }
+  .subli li {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .subli li:hover {
+    background-color: #f0f0f0;
+  }
+  /* Menu toggle styles */
+  .menu-toggle {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+.menu-toggle span:first-child {
+  top: 10%;
+}
+  
+.menu-toggle span:last-child {
+  top: 90%;
+}
+.bgimage{
+  background: url('./images/university-sketch.webp') no-repeat ;
+  width: 100%;
+  margin-top: 100px;
+  background-size: cover;
+  height: 410px;
+}
+footer{
+    background-color: yellow;
+    color: black;
+    display: flex;
+    gap: 220px;
+    height:auto;
+    padding: 13px;
+    width: 100%;
+}
+.logofont2{
+    height: 30px;
+    width: 30px;
+    color: green;
+}
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    header {
+      padding: 10px;
+    }
+  
+    .logo h1 {
+      font-size: 27px;
+    }
+  
+    .menu-toggle span {
+      background-color: #ffffff;
+    }
+  
+    .menu-toggle.active span:first-child {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.active span:last-child {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  /* *{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+}
+
+section{
+    padding:2rem 7%;
+}
+.header{
+    width: 100%;
+    background: black;
+    display: flex;
+    padding: 1.0rem 1%;
+    border-bottom: black;
+    position: sticky;
+    top:0; right: 0; left: 0;
+    z-index: 1000;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color:blue;
+    border-bottom: .1rem solid black;
+    padding-bottom: .5rem;
+}
+.navbar{
+    justify-content: right;
+}
+.logo{
+    margin-left: 0px;
+    width: 75px;
+    margin-right: 10px;
+    height: 65px;
+    text-decoration: none;
+}
+.bgimage{
+    background: url('./images/university-sketch.webp') no-repeat ;
+    width: 100%;
+    margin-top: 10px;
+    background-size: cover;
+    height: 410px;
+} */
+/* Header styles */
+  
